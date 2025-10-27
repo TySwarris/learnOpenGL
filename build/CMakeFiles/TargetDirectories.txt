@@ -1,0 +1,4 @@
+/home/ty/CProjects/LearnOpenGL/build/CMakeFiles/helloWindow.dir
+/home/ty/CProjects/LearnOpenGL/build/CMakeFiles/helloTriangle.dir
+/home/ty/CProjects/LearnOpenGL/build/CMakeFiles/edit_cache.dir
+/home/ty/CProjects/LearnOpenGL/build/CMakeFiles/rebuild_cache.dir

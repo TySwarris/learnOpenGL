@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/helloTriangle.dir/link.d CMakeFiles/helloTriangle.dir/src/helloTriangle.cpp.o CMakeFiles/helloTriangle.dir/libs/glad/src/glad.c.o -o helloTriangle  -lglfw -ldl /usr/lib/libGLX.so /usr/lib/libOpenGL.so

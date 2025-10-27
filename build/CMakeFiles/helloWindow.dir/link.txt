@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/helloWindow.dir/link.d CMakeFiles/helloWindow.dir/src/helloWindow.cpp.o CMakeFiles/helloWindow.dir/libs/glad/src/glad.c.o -o helloWindow  -lglfw -ldl /usr/lib/libGLX.so /usr/lib/libOpenGL.so
