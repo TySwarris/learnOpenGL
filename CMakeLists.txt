@@ -22,6 +22,12 @@ function(add_example name)
   set_target_properties(${name} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
 endfunction()
 
+# --- Custom clean target -------------------------------------------------------
+add_custom_target(clean-all
+  COMMAND ${CMAKE_COMMAND} -E rm -rf ${CMAKE_BINARY_DIR}/*
+  COMMENT "Removing all build files..."
+)
+
 add_example(helloWindow)
 
 
