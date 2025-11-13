@@ -16,7 +16,7 @@ set(GLAD_INC libs/glad/include)
 
 function(add_example name)
   add_executable(${name} src/${name}.cpp ${GLAD_SRC})
-  target_include_directories(${name} PRIVATE ${GLAD_INC} ${GLFW_INCLUDE_DIRS})
+  target_include_directories(${name} PRIVATE ${GLAD_INC} ${GLFW_INCLUDE_DIRS} src)
   target_compile_definitions(${name} PRIVATE GLFW_INCLUDE_NONE)
   target_link_libraries(${name} PRIVATE ${GLFW_LIBRARIES} OpenGL::GL dl)
   set_target_properties(${name} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
@@ -32,7 +32,7 @@ add_example(helloWindow)
 
 
 add_example(helloTriangle)
-# add_example(shaders)
+add_example(helloShader)
 # add_example(textures)
 # add_example(transformations)
 

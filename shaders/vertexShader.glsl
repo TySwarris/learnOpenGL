@@ -1,9 +1,9 @@
-#verion 330 core
+#version 330 core
 layout(location = 0) in vec3 aPos;
 
 out vec4 vertexColor;
 
 void main() {
-  gl_position = vec4(aPos, 1.0);
-  vertexColor = vec4(0.5)
+  gl_Position = vec4(aPos, 1.0);
+  vertexColor = vec4(aPos.x * 3, aPos.y, aPos.z, 1);
 }

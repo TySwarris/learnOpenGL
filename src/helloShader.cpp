@@ -41,7 +41,7 @@ int main() {
     return -1;
   }
 
-  Shader shader("vertexShader.glsl", "fragmentShader.glsl");
+  Shader shader("shaders/vertexShader.glsl", "shaders/fragmentShader.glsl");
 
   // end of shader
   // clang-format off
@@ -99,6 +99,9 @@ int main() {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     shader.use();
+
+    float time = glfwGetTime();
+    shader.setFloat("uTime", time);
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
