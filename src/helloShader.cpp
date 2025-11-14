@@ -46,18 +46,19 @@ int main() {
   // end of shader
   // clang-format off
   float vertices[] = {
-    -0.5f,0.5f,0.0f,
-    -1.0f, -0.5f, 0.0f,
-    0.0f, -0.5f, 0.0f,
+    //Positions                            //Colours
+    -0.5f,0.5f,0.0f,    1.0f, 0.0f, 0.0f,
+    -1.0f, -0.5f, 0.0f,     0.0f, 1.0f, 0.0f,
+    0.0f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,
 
-    0.5f, 0.5f, 0.0f,
-    1.0f, -0.5f, 0.0f,
-    0.0f, -0.5f, 0.0f,
+ //   0.5f, 0.5f, 0.0f, 
+   // 1.0f, -0.5f, 0.0f,
+    //0.0f, -0.5f, 0.0f,
   };
   unsigned int indices[] = {
       // note that we start from 0!
       0, 1, 2, // first Triangle
-      3, 4, 5  // second Triangle
+      //3, 4, 5  // second Triangle
   };
   //clang-format on
   unsigned int VBO, VAO, EBO;
@@ -100,8 +101,8 @@ int main() {
     glClear(GL_COLOR_BUFFER_BIT);
     shader.use();
 
-    float time = glfwGetTime();
-    shader.setFloat("uTime", time);
+    //float time = glfwGetTime();
+    //shader.setFloat("uTime", time);
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
