@@ -1,11 +1,11 @@
 #version 330 core
-out vec4 fragColor;
+out vec4 FragColor;
 
-//uniform float uTime;
-in vec3 ourColour;
+//uniform float utime;
+in vec3 ourcolor;
 
 void main() {
-  //float intensity = sin(uTime);
+  //float intensity = sin(utime);
   //vec3 color = vec3(intensity, intensity / 4, 1.0 - intensity);
-  fragColor = vec4(ourColour, 1.0);
+  FragColor = vec4(ourcolor, 1.0);
 }
