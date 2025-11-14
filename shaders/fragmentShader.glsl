@@ -2,10 +2,10 @@
 out vec4 fragColor;
 
 //uniform float uTime;
-in vec4 vertexColor;
+in vec3 ourColour;
 
 void main() {
   //float intensity = sin(uTime);
   //vec3 color = vec3(intensity, intensity / 4, 1.0 - intensity);
-  fragColor = vec4(vertexColor);
+  fragColor = vec4(ourColour, 1.0);
 }
